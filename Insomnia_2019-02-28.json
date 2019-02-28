@@ -1,0 +1,366 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2019-02-28T14:14:12.461Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
+	"resources": [
+		{
+			"_id": "wrk_a07fa6912ccf410d9554f679aa05db44",
+			"created": 1551355193859,
+			"description": "",
+			"modified": 1551355193859,
+			"name": "Insomnia",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_00544b3485aa444fb13b843f71e935e7",
+			"color": null,
+			"created": 1551355193951,
+			"data": {
+				"base_url": "http://localhost:3333"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1551355193951,
+			"modified": 1551357981699,
+			"name": "New Environment",
+			"parentId": "wrk_a07fa6912ccf410d9554f679aa05db44",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_ac4e12e01c5d435ebcafddf98fe2087f",
+			"cookies": [],
+			"created": 1551355193955,
+			"modified": 1551355193955,
+			"name": "Default Jar",
+			"parentId": "wrk_a07fa6912ccf410d9554f679aa05db44",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "fld_e16e87913a7243b18ce9121d8134ac8c",
+			"created": 1551357697049,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1551357697049,
+			"modified": 1551357697049,
+			"name": "Files",
+			"parentId": "wrk_a07fa6912ccf410d9554f679aa05db44",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_d859501c77584793b3567379dd05809e",
+			"created": 1551358165814,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1551358165814,
+			"modified": 1551358165814,
+			"name": "Users",
+			"parentId": "wrk_a07fa6912ccf410d9554f679aa05db44",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_8231eafa4ac64819aba102ff89da0202",
+			"created": 1551358309571,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1551358309571,
+			"modified": 1551358309571,
+			"name": "Sessions",
+			"parentId": "wrk_a07fa6912ccf410d9554f679aa05db44",
+			"_type": "request_group"
+		},
+		{
+			"_id": "fld_9a3793e03cc941b3bf2b9013e2ec5e55",
+			"created": 1551362086206,
+			"description": "",
+			"environment": {},
+			"metaSortKey": -1551362086206,
+			"modified": 1551362086206,
+			"name": "Projects",
+			"parentId": "wrk_a07fa6912ccf410d9554f679aa05db44",
+			"_type": "request_group"
+		},
+		{
+			"_id": "req_c7ee4d97b11b4811be25c87bc203d1f7",
+			"authentication": {
+				"disabled": false,
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1MTM1ODQ4NH0.oKY2rruedu6ETF4YU5ZFhFL52bADPaIePbTXeT2uXKE",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "multipart/form-data",
+				"params": [
+					{
+						"fileName": "/home/kilson/Imagens/D_NP_711416-MLB27234960515_042018-Q.jpg",
+						"id": "pair_4eabe50815c348579045128566eff095",
+						"name": "file",
+						"type": "file",
+						"value": ""
+					}
+				]
+			},
+			"created": 1551357704432,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_032205c735394031ae40fcf95fe2a663",
+					"name": "Content-Type",
+					"value": "multipart/form-data"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1551357704432,
+			"method": "POST",
+			"modified": 1551362038156,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_e16e87913a7243b18ce9121d8134ac8c",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/files",
+			"_type": "request"
+		},
+		{
+			"_id": "req_bfa37ea532b347bd81391efc3dcf8817",
+			"authentication": {
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1MTM1ODQ4NH0.oKY2rruedu6ETF4YU5ZFhFL52bADPaIePbTXeT2uXKE",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1551359026733,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1551357704382,
+			"method": "GET",
+			"modified": 1551359049510,
+			"name": "Show",
+			"parameters": [],
+			"parentId": "fld_e16e87913a7243b18ce9121d8134ac8c",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/files/1",
+			"_type": "request"
+		},
+		{
+			"_id": "req_225a3fbccda144629e1b4a1c04dab9e8",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"username\": \"kilson\",\n\t\"email\": \"kilson@kilson.com.br\",\n\t\"password\": \"123456\"\n}"
+			},
+			"created": 1551358177644,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_d8a8767f1579430c8372d96ea514381f",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1551358177644,
+			"method": "POST",
+			"modified": 1551358238313,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_d859501c77584793b3567379dd05809e",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/users",
+			"_type": "request"
+		},
+		{
+			"_id": "req_67385db93ca745239cf68cc14fc369f4",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"email\": \"kilson@kilson.com.br\",\n\t\"password\": \"123456\"\n}"
+			},
+			"created": 1551358318025,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_c4b1fa4a33d44cb7b7adeefdfbe556ac",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1551358318025,
+			"method": "POST",
+			"modified": 1551358350859,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_8231eafa4ac64819aba102ff89da0202",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/sessions",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d1b6238a86494bdaa3f0975d18b5de4a",
+			"authentication": {
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1MTM1ODQ4NH0.oKY2rruedu6ETF4YU5ZFhFL52bADPaIePbTXeT2uXKE",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1551362097320,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1551362097320,
+			"method": "GET",
+			"modified": 1551362123380,
+			"name": "Index",
+			"parameters": [],
+			"parentId": "fld_9a3793e03cc941b3bf2b9013e2ec5e55",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/projects",
+			"_type": "request"
+		},
+		{
+			"_id": "req_8673c9ee6d07494e9d803fb57aab99b6",
+			"authentication": {
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1MTM1ODQ4NH0.oKY2rruedu6ETF4YU5ZFhFL52bADPaIePbTXeT2uXKE",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"title\": \"Show de bola\",\n\t\"description\": \"Muito massa\"\n}"
+			},
+			"created": 1551362326328,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_a1829ce812a04e6ca6868edf1c306b21",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1551360207672.5,
+			"method": "POST",
+			"modified": 1551362375965,
+			"name": "Create",
+			"parameters": [],
+			"parentId": "fld_9a3793e03cc941b3bf2b9013e2ec5e55",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/projects",
+			"_type": "request"
+		},
+		{
+			"_id": "req_f212826505434b6bae2844da3351ee16",
+			"authentication": {
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1MTM1ODQ4NH0.oKY2rruedu6ETF4YU5ZFhFL52bADPaIePbTXeT2uXKE",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1551362659416,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1551360207622.5,
+			"method": "GET",
+			"modified": 1551362716749,
+			"name": "Show",
+			"parameters": [],
+			"parentId": "fld_9a3793e03cc941b3bf2b9013e2ec5e55",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/projects/1",
+			"_type": "request"
+		},
+		{
+			"_id": "req_32e72a72efcb4fefb12ba5939eebbbda",
+			"authentication": {
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1MTM1ODQ4NH0.oKY2rruedu6ETF4YU5ZFhFL52bADPaIePbTXeT2uXKE",
+				"type": "bearer"
+			},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"title\": \"Show de bola\",\n\t\"description\": \"éééé\"\n}"
+			},
+			"created": 1551362983994,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_a1829ce812a04e6ca6868edf1c306b21",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1551360207572.5,
+			"method": "PUT",
+			"modified": 1551363030644,
+			"name": "Update",
+			"parameters": [],
+			"parentId": "fld_9a3793e03cc941b3bf2b9013e2ec5e55",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/projects/1",
+			"_type": "request"
+		},
+		{
+			"_id": "req_708b25cde62741a2be7d3a572b7868c9",
+			"authentication": {
+				"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOjEsImlhdCI6MTU1MTM1ODQ4NH0.oKY2rruedu6ETF4YU5ZFhFL52bADPaIePbTXeT2uXKE",
+				"type": "bearer"
+			},
+			"body": {},
+			"created": 1551363092543,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1551359262798.75,
+			"method": "DELETE",
+			"modified": 1551363104633,
+			"name": "Delete",
+			"parameters": [],
+			"parentId": "fld_9a3793e03cc941b3bf2b9013e2ec5e55",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url  }}/projects/2",
+			"_type": "request"
+		}
+	]
+}
