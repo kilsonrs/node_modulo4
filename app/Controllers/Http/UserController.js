@@ -7,7 +7,7 @@ class UserController {
     //ctx => contexto da requisição
     const data = request.only(["username", "email", "password"]);
 
-    const user = await User.create(data);
+    const user = await User.crreate(data);
 
     return user;
   }
